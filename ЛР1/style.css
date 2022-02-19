@@ -1,0 +1,269 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body, html {
+	width: 100%;
+}
+
+body {
+	background-color: whitesmoke;
+	
+}
+#logo {
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#logo:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+header {
+	width: 100%;
+	background-color: darkgray;
+	padding: 10px;
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-around;
+
+}
+header >  nav{
+	margin: 10px;
+	padding: 10px;
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+header >  nav > button {
+	border:  0;
+	padding: 3px;
+	border-top: 4px solid grey;
+	margin: 5px;
+	background-color: black;
+	color: white;
+	border-radius: 10px;
+	min-width: 100px;
+}
+header >  nav > button:hover {
+	border-top: 2px solid whitesmoke;
+	background-color: darkgray;
+	cursor: pointer;
+
+}
+main {
+	padding: 20px;
+	width: 80%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin-left: 10%;
+	background-color: ghostwhite;
+}
+footer {
+	border-top: 1px solid black;
+	padding: 10px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#infoPanel{
+	grid-area: infoPanel;
+}
+#btmC {
+	grid-area: btmC;
+}
+#btmD {
+	grid-area: btmD;	
+}
+#btm1 {
+	grid-area: btm1;	
+}
+#btm2 {
+	grid-area: btm2;	
+}
+#btm3 {
+	grid-area: btm3;	
+}
+#btm4 {
+	grid-area: btm4;	
+}
+#btm5 {
+	grid-area: btm5;
+}
+#btm6 {
+	grid-area: btm6;	
+}
+#btm7 {
+	grid-area: btm7;	
+}
+#btm8 {
+	grid-area: btm8;	
+}
+#btm9 {
+	grid-area: btm9;	
+}
+#btm0 {
+	grid-area: btm0;	
+}
+#btmPoint {
+	grid-area: btmPoint;	
+}
+#btmPlus {
+	grid-area: btmPlus;
+}
+#btmMinus {
+	grid-area: btmMinus;	
+}
+#btmMult {
+	grid-area: btmMult;
+}
+#btmDiv {
+	grid-area: btmDiv;	
+}
+#btmEq {
+	grid-area: btmEq;	
+}
+.calculator {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 
+        "infoPanel infoPanel infoPanel infoPanel"
+        "btmC btmD btmOpScope btmClScope"
+        "btm1 btm2 btm3 btmPlus"
+        "btm4 btm5 btm6 btmMinus"
+        "btm7 btm8 btm9 btmMult"
+        "btm0 btmPoint btmEq btmDiv";
+
+
+}
+.calculator > * {
+	margin: 5px;
+}
+.calculator > #infoPanel
+{
+	border: 3px solid black;
+	background-color: white;
+	padding: 20px;
+	color: while;
+}
+.calculator > button {
+	cursor: pointer;
+}
+#funcForm2 > *, #funcForm3 > * {
+	margin: 5px;
+}
+
+
+.wnd_wrap {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wnd_msg {
+    width: 400px;
+    height: 250px;
+    background-color: darkgray;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    border : 3px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    box-shadow: 0 0 10px white;
+            
+}
+.wnd_close {
+    align-self: flex-end;
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;      
+}
+.wnd_msg > p {
+    text-align: center;
+    flex-grow: 8;
+   } 
+#wnd_info_msg {
+	width: 50%;
+}
+.infoAvatar {
+	width: 100px;
+	border: 1px solid black;
+}
+.infoContent {
+	display: flex;
+	justify-content: center;
+
+}
+.infoContent > * {
+	margin: 10px;
+}
+.form2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.form2 > input {
+	width: 400px;
+	height: 50px;
+	font-size: 25px;
+	border-radius: 9px;
+}
+.form2 > div {
+	width: 400px;
+}
+.form2 > div > p  {
+	font-size: 25px;
+}
+.form2 > div > p::first-letter  {
+	color: red;
+}
+.form2 > button {
+	width: 200px;
+	font-size: 25px;
+	height: 50px;
+	border:  0;
+	padding: 3px;
+	border-top: 4px solid black;
+	margin: 5px;
+	background-color: grey;
+	color: white;
+	border-radius: 10px;
+	min-width: 100px;
+}
+.form2 > button:hover {
+	border-top: 2px solid whitesmoke;
+	background-color: darkgray;
+	cursor: pointer;
+
+}
+#start_txt {
+	margin: 20px;
+	font-size: 30px;
+}
+#start_txt::first-letter {
+	color: red;
+
+	
+}

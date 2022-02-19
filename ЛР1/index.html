@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ЛР №1</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<header>
+		<div id="logo">LOGO</div>
+		<nav>
+			<button id="func1">Калькулятор</button>
+			<button id="func2">НСД</button>
+			<button id="func3">НСК</button>
+		</nav>
+	</header>
+	<main>
+		<div class="wnd_wrap" id="wrap_info" style="display: none;">
+            <div class="wnd_msg" id="wnd_info_msg">
+               	<div class="wnd_close" id="wnd_info_close" >&#10006;</div>
+               	<p>Інформація про автора сторінки:</p>
+               	<div class="infoContent">
+	               	<img class="infoAvatar" src="img/user.jpg" alt="avatar">
+		               <div >
+		               	<p>Виконав:</p>
+		               	<p>студент 201Б групи</p>
+		               	<p>Мар'янчук Олександр</p>
+		               </div>
+               	</div>
+            </div>
+       </div>
+		<div class="wnd_wrap" id="wrap_alert" style="display: none;">
+            <div class="wnd_msg">
+               <div class="wnd_close" id="wnd_alert_close" >&#10006;</div>
+                <h3 id="wnd_alert_title"></h3>
+                <p id="wnd_alert_msg"></p>
+            </div>
+       </div>
+       <p id="start_txt">Виберіть потрібну функцію</p>
+		<div id="funcForm1" class="form">
+			<div class="calculator">
+				<div id="infoPanel">0</div>
+				<button id="btmC">C</button>
+				<button id="btmD">&#8592;</button>
+				<button id="btm1">1</button>
+				<button id="btm2">2</button>
+				<button id="btm3">3</button>
+				<button id="btm4">4</button>
+				<button id="btm5">5</button>
+				<button id="btm6">6</button>
+				<button id="btm7">7</button>
+				<button id="btm8">8</button>
+				<button id="btm9">9</button>
+				<button id="btmOpScope">(</button>
+				<button id="btmClScope">)</button>
+				<button id="btm0">0</button>
+				<button id="btmPoint">.</button>
+				<button id="btmPlus">+</button>
+				<button id="btmMinus">-</button>
+				<button id="btmMult">*</button>				
+				<button id="btmDiv">/</button>
+				<button id="btmEq">=</button>	
+			</div>	
+		</div>
+		<div id="funcForm2" class="form2">
+			<input type="text" placeholder="Введіть числа через пробіл" id="form2TextEdit">
+			<div><p id="form2Result">Результат: </p></div>
+			<button id="form2Calc">Знайти НСД</button>
+		</div>
+		<div id="funcForm3" class="form2">
+			<input type="text" placeholder="Введіть числа через пробіл" id="form3TextEdit">
+			<div><p id="form3Result">Результат: </p></div>
+			<button id="form3Calc">Знайти НСК</button>
+		</div>
+		</div>
+	</main>
+	<footer>
+		
+		<p>All rights reserved ©. ЛР №1</p>
+	</footer>
+</body>
+</html>
