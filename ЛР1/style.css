@@ -146,11 +146,9 @@ footer {
         "btm4 btm5 btm6 btmMinus"
         "btm7 btm8 btm9 btmMult"
         "btm0 btmPoint btmEq btmDiv";
+    grid-gap: 5px;
 
 
-}
-.calculator > * {
-	margin: 5px;
 }
 .calculator > #infoPanel
 {
@@ -263,7 +261,9 @@ footer {
 	font-size: 30px;
 }
 #start_txt::first-letter {
-	color: red;
+	color: red;	
+}
+.displayNone {
+	display: none;
 
-	
 }

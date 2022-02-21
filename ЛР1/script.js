@@ -2,7 +2,7 @@
 	let countBlock = 4;
 	for (let i = 0; i < arguments.length; i++) 
 		arguments[i]();
-	defaultPropertyDisplay = [];
+	let defaultPropertyDisplay = [];
 	for (let i = 1; i < countBlock;i++){
 		defaultPropertyDisplay.push(document.getElementById("funcForm"+i).style.display);
 		document.getElementById("funcForm"+i).style.display = "none";
@@ -68,8 +68,8 @@ function lcm2 (a, b)
 }
 function gcd (numbers)
 {
-	min = 0
-	countNonZero = 2;
+	let min = 0
+	let countNonZero = 2;
 	while(countNonZero > 1)
 	{
 		countNonZero = 0;
@@ -172,7 +172,7 @@ function InitCalc (){
 			States.IsPointNumber = false;
 		}
 	});
-	buttonArrNumericId = {"btm1" : "1","btm2" : "2", "btm3" : "3","btm4" : "4", "btm5" : "5","btm6" : "6" , "btm7" : "7" , "btm8" : "8", "btm9" : "9"};
+	let buttonArrNumericId = {"btm1" : "1","btm2" : "2", "btm3" : "3","btm4" : "4", "btm5" : "5","btm6" : "6" , "btm7" : "7" , "btm8" : "8", "btm9" : "9"};
 	for(let id in buttonArrNumericId)
 	{
 		document.getElementById(id).addEventListener("click", function () {
@@ -191,7 +191,7 @@ function InitCalc (){
 		}
 		else
 		{
-			del_symbol = displayDom.innerHTML.slice(-1);
+			let del_symbol = displayDom.innerHTML.slice(-1);
 			if (del_symbol == '.')
 				States.IsPointNumber = false;
 			else if (del_symbol == "(")
@@ -310,22 +310,22 @@ function calcExpresion (exp){
 
 function LogoInit(){
 	document.getElementById("logo").addEventListener("click",function(){
-		document.getElementById("wrap_info").style.display = "flex";
+		document.getElementById("wrap_info").classList.remove("displayNone");
 
 	});
 }
 
 function AlertEx(title , msg){
-	document.getElementById("wrap_alert").style.display = "flex";
+	document.getElementById("wrap_alert").classList.remove("displayNone");
 	document.getElementById("wnd_alert_title").innerHTML = title;
 	document.getElementById("wnd_alert_msg").innerHTML = msg;
 }
 function ModalWinInit(){
 	document.getElementById("wnd_alert_close").addEventListener("click",function(){
-		document.getElementById("wrap_alert").style.display = "none";
+		document.getElementById("wrap_alert").classList.add("displayNone");
 	});
 	document.getElementById("wnd_info_close").addEventListener("click",function(){
-		document.getElementById("wrap_info").style.display = "none";
+		document.getElementById("wrap_info").classList.add("displayNone");
 	});
 }
 
