@@ -18,7 +18,8 @@
 			data.push(new Point(x,y));
 		}
 	}
-	console.log()
+	if(!data.length)
+		data.push(new Point(0,0));
 	BuildGraphic(canvas1,data,10,100);
 	BuildHistogram(canvas2,data,10,100);
 	BuildPieChart(canvas3,data,100);
