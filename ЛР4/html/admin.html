@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initialscale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+	<link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+ 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Сторінка адміністратора</title>
+	<link rel="stylesheet" href="font/fontaweasome/css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="css/admin.css">
+
+	<script src="js/script.js" defer></script>
+	<script src="js/admin.js" defer></script>
+	<script src="js/view/indexScript.js" defer></script>
+</head>
+<body>
+	<div class="displayNone" id="msg-box">
+		<h2 id ="msg-box-title">Lorem ipsum</h2>
+		<p id="msg-box-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, aspernatur quas neque autem, magnam nostrum qui.</p>
+	</div>
+	<header>
+		<div class="logo-header">
+			<img src="img/logo.png" alt="">
+			<p>Aboba Shop</p>
+		</div>
+		<nav class="fullnav">
+			<a href="news">Новини</a>
+			<a href="index">Товар</a>
+			<a class="onlyGuest" href="login">Увійти</a>
+			<a class="onlyUser displayNone userLogout" href="#">Вийти</a>
+			<a class="onlyUser displayNone" href="account">Сторінка користувача</a>
+		</nav>
+		
+		<div id="mob-nav-but">
+			&#8801
+		</div>
+	</header>
+	<ul id="mobnav">
+		<li><span >Про нас</span></li>
+		<li><a href="index.html">Товар</a></li>
+		<li class="onlyGuest"><a href="login">Увійти</a></li>
+		<li class="onlyUser displayNone userLogout"><a href="#">Вийти</a></li>
+		<li class="onlyUser displayNone"><a href="account">Сторінка користувача</a></li>
+	</ul>
+	<main>
+		<div class="banner-main">
+			<h1>Магазин ПЗ</h1>
+			<div>Ми не просто продаємо ліцензійний софт. Ми продаємо рішення для ваших щоденних завдань, тому наші технічні фахівці готові допомогти з установкою, налаштуванням, оновленням та іншими необхідними роботами, пов'язаними з програмним забезпеченням. Ніякої головного болю, купили – і все відразу працює!</div>
+		</div>
+		<h1 class="title-admin">Сторінка адміністратора</h1>
+		<h2 class="title-admin">Графіки покупок</h2>
+		<div class="chart-wrapper">
+			<canvas width="500" height="500" id="canvas1" class="canvas"></canvas> 
+			<canvas width="500" height="500" id="canvas2" class="canvas"></canvas>
+			<canvas width="500" height="500" id="canvas3" class="canvas"></canvas>
+		</div>
+		<h2 class="title-admin">Редагувати товари</h2>
+		<div class ="admin-form">
+			<form class="form1">
+				<h3 class="title-admin">Видалити пропозицію</h3>
+				<input type="text" required placeholder="ID товару">
+				<input type="submit"  id="adminDelGood" value="Надіслати">
+			</form>
+			<form class="form1">
+				<h3 class="title-admin">Змінити пропозицію</h3>
+				<input type="text" id="adminChangeGood-id" placeholder="ID товару">
+				<input type="text" id="adminChangeGood-name" placeholder="Назва товару">
+				<textarea id="adminChangeGood-desc"cols="30" rows="10" placeholder="Опис товару"></textarea>
+				<input type="text" id="adminChangeGood-price" placeholder="Ціна товару">
+				<input type="text" id="adminChangeGood-category" placeholder="Категорія товару">
+				<div class="fileUpdate">
+					<div class="fileUpdate-preview"></div>
+					<input type="file" id="adminChangeGood-file" accept="image/png, image/jpeg" class="displayNone">
+					<p class="fileUpdate-filename">Назва файла</p>
+					<button class="fileUpdate-submit">Вибрати файл</button>
+				</div>
+				<input type="submit"  id="adminChangeGood" value="Надіслати">
+			</form>
+			<form class="form1">
+				<h3 class="title-admin">Додати пропозицію</h3>
+				<input type="text" id="adminAddGood-name" placeholder="Назва товару">
+				<textarea id="adminAddGood-desc" cols="30" rows="10" placeholder="Опис товару"></textarea>
+				<input type="text" id="adminAddGood-price" placeholder="Ціна товару">
+				<input type="text" id="adminAddGood-category" placeholder="Категорія товару">
+				<div class="fileUpdate">
+					<div class="fileUpdate-preview"></div>
+					<input type="file" id="adminAddGood-file" accept="image/png, image/jpeg" class="displayNone">
+					<p class="fileUpdate-filename">Назва файла</p>
+					<button class="fileUpdate-submit">Вибрати файл</button>
+				</div>
+				<input type="submit"  id="adminAddGood" value="Надіслати">
+			</form>
+		</div>
+	</main>
+	<footer>
+		<p class="copyright"> Всі права захищенні © Aboba Shop.</p>
+		<p id="time"> </p>
+		<img src="img/mastercard.png" alt=""></img>
+		<img src="img/visa.png" alt=""></img>
+	</footer>
+</body>
+</html>

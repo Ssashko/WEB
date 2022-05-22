@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.displayNone {
+    display: none !important;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#blockAuth {
+    font-family: 'Roboto', sans-serif;
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#blockAuth > h1 {
+    margin: 15px 0;
+}
+#blockAuth > h1::first-letter {
+    color: red;
+    
+}
+#blockAuth > a {
+    text-decoration: none;
+    color: brown;
+    font-family: 'Chalkduster', cursive;
+    margin: 15px 0;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+
+}
+.form1 > * {
+    margin: 5px;
+    display: block;
+}
+input[type="text"], input[type="password"], input[type="email"]   {
+    border: 1px solid black;
+    border-radius: 3px;
+    outline: none;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+
+}
+input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover {
+    border: 1px solid rgb(194, 36, 36);
+    border-radius: 3px;
+    outline: none;
+
+}
+input[type="submit"] {
+    font-size: 22px;
+    font-family: 'Chalkduster', cursive;
+    border: 1px solid rgba(15, 53, 128, 0.952);
+    border-radius: 3px;
+    background-color: rgb(34, 12, 161);
+    color: azure;
+}
+input[type="submit"]:hover {
+    background-color: rgb(10, 8, 24);
+    cursor: pointer;
+}
+form i {
+    cursor: pointer;
+    width: 25px;
+}
+form i:hover {
+    color:rgb(34, 12, 161);
+}
+.captcha-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.captcha-wrapper > img  {
+    width: 40%;
+    border: 1px solid black;
+}
+.captcha-wrapper > input  {
+    width: 40%;
+}
+.captcha-wrapper > i  {
+    font-size: 20px;
+}

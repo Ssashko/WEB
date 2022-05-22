@@ -1,0 +1,16 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^\/css/(.*).css
+RewriteCond %{REQUEST_URI} !^\/img/(.*).png
+RewriteCond %{REQUEST_URI} !^\/img/(.*).jpg
+RewriteCond %{REQUEST_URI} !^\/img/(.*).php
+RewriteCond %{REQUEST_URI} !^\/img/(.*).gif
+RewriteCond %{REQUEST_URI} !^\/img/(.*).ico
+RewriteCond %{REQUEST_URI} !^\/font/(.*).eot
+RewriteCond %{REQUEST_URI} !^\/font/(.*).svg
+RewriteCond %{REQUEST_URI} !^\/font/(.*).ttf
+RewriteCond %{REQUEST_URI} !^\/font/(.*).woff
+RewriteCond %{REQUEST_URI} !^\/font/(.*).woff2
+RewriteCond %{REQUEST_URI} !^\/font/(.*).otf
+RewriteCond %{REQUEST_URI} !^\/font/(.*).css
+RewriteCond %{REQUEST_URI} !^\/js/(.*).js
+RewriteRule .* index.php [L]

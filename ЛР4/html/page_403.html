@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <title>Помилка 403</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../img/background.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        #block403 {
+            font-family: 'Roboto', sans-serif;
+            padding: 50px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: azure;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        #block403 > h1 {
+            margin: 15px 0;
+        }
+        #block403 > h1::first-letter {
+            color: red;
+            
+        }
+        #block403 > a {
+            text-decoration: none;
+            color: brown;
+            font-family: 'Chalkduster', cursive;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="block403">
+        <h1>Помилка 403</h1>
+        <p>В доступі відхилено</p>
+        <a href="/">На головну</a>
+    </div>
+</body>
+</html>

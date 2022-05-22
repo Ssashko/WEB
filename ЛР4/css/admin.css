@@ -1,0 +1,104 @@
+.title-admin {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 20px;
+}
+.title-admin::first-letter {
+	color: red;
+
+}
+.chart-wrapper {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+.canvas {
+	width: 500px;
+	height: 500px;
+}
+@media (max-width: 600px) { 
+	.canvas {
+		width: 300px;
+		height: 300px;
+	}
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+	border: 1px solid black;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 5px;
+}
+.form1 > * {
+    margin: 5px;
+    display: block;
+}
+input[type="text"], input[type="password"], input[type="email"]   {
+    border: 1px solid black;
+    border-radius: 3px;
+    outline: none;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+
+}
+input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover {
+    border: 1px solid rgb(194, 36, 36);
+    border-radius: 3px;
+    outline: none;
+
+}
+input[type="submit"], .fileUpdate-submit {
+    font-size: 22px;
+    font-family: 'Chalkduster', cursive;
+    border: 1px solid rgba(15, 53, 128, 0.952);
+    border-radius: 3px;
+    background-color: rgb(34, 12, 161);
+    color: azure;
+}
+input[type="submit"]:hover, fileUpdate-submit:hover {
+    background-color: rgb(10, 8, 24);
+    cursor: pointer;
+}
+
+.admin-form {
+	display: flex;
+	justify-content: center;
+}
+.form1 {
+	max-width: 300px;
+}
+.fileUpdate {
+	border: 1px solid rgb(34, 12, 161);
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.fileUpdate-preview {
+	width: 100%;
+	height: 150px;
+	background: url('/img/file_upload_def.png');
+	background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 5px;
+}
+.fileUpdate-filename {
+	font-family: 'Roboto', sans-serif;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: normal;
+	width: 120px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.fileUpdate-submit {
+	cursor: pointer;
+}
+.fileUpdate-submit:hover {
+	background-color: rgb(67, 34, 185);
+}

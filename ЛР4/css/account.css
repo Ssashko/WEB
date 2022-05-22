@@ -1,0 +1,56 @@
+#account-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid black;
+}
+#account-info > * {
+    
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+#account-info > h6 {
+    background-color: brown;
+}
+#account-info > p {
+    color: azure;
+    background-color: rgb(29, 24, 24);
+}
+.title-account {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	margin: 10px 0px;
+}
+.title-account::first-letter {
+	color: red;
+
+}
+#orders-info {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    max-height: 600px;
+    overflow-y: auto;
+    font-family: 'Roboto', sans-serif;
+}
+#orders-info > * {
+    border: 1px solid black;
+}
+#orders-info > h6 {
+    text-align: center;
+    
+}
+#orders-info > h6::first-letter {
+    color: red;
+}
+#orders-info > p {
+    color: azure;
+    background-color: rgb(29, 24, 24);
+    padding: 3px;
+}

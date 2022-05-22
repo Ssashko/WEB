@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <title>Увійти</title>
+    <link rel="stylesheet" href="font/fontaweasome/css/all.min.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/login.js" defer></script>
+</head>
+<body>
+    <div class="displayNone" id="msg-box">
+		<h2 id ="msg-box-title">Lorem ipsum</h2>
+		<p id="msg-box-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, aspernatur quas neque autem, magnam nostrum qui.</p>
+	</div>
+    <div id="blockAuth">
+        <h1>Увійти</h1>
+        <form class="form1" action="">
+            <input type="text" required id="logLogin" placeholder="Логін">
+            <div class="inpPassWrapper">
+                <input type="password" required id="logPass" placeholder="Пароль">
+                <i class="fa fa-eye showPass" aria-hidden="true" ></i>
+                <i class=" fa fa-eye-slash hidePass displayNone" aria-hidden="true"></i>
+            </div>
+            <div class="captcha-wrapper">
+                <img src="captcha" alt="captcha">
+                <i class="fa fa-retweet" id="logCaptchaReload" aria-hidden="true"></i>
+                <input type="text" required id="logCaptcha" placeholder="Капча">
+            </div>
+            
+            <input type="submit" required id="logSubmit">
+        </form>
+        <a href="/register">Не маєте облікового запису?</a>
+        <a href="/">Головна</a>
+    </div>
+</body>
+</html>

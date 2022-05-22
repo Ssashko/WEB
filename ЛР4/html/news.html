@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initialscale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+	<link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+ 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Новини</title>
+	<link rel="stylesheet" href="font/fontaweasome/css/all.min.css">
+	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/modal2.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<script src="js/script.js" defer></script>
+	<script src="js/script2.js" defer></script>
+	<script src="js/view/indexScript.js" defer></script>
+</head>
+<body>
+	<div class="displayNone" id="msg-box">
+		<h2 id ="msg-box-title">Lorem ipsum</h2>
+		<p id="msg-box-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, aspernatur quas neque autem, magnam nostrum qui.</p>
+	</div>
+	<div class="displayNone" id="nonmodal-subscribe-wrapper">
+		<div id="main-nonmodal-subscription">
+			<div id="nonmodal-subscription-close">&#10006</div>
+			<div id="nonmodal-subscribe">
+				<img src="img/mail-sub.png">
+				<p>Підпишіться на розсилку новинок!</p>	
+				<form id="submit-subsription">
+					<input id="edit-subsription" required class="text-1" type="email" placeholder="e-mail" name="mail-subscription-edit">
+					<input type="submit" value="Підписатися" name="mail-subscription-submit"class="btm-1">
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="displayNone" id="popup-modal-advertisiment">
+		<div id="main-popup-advertisiment">
+			<div id="popup-advertisiment-close">&#10006</div>
+			<div id="popup-advertisiment">
+				<span>Рекламу можна закрити через: <span id="ad-popup-timer">5</span></span>
+				<img src="img/ad/test.png">
+			</div>
+		</div>
+	</div>
+	<div class="displayNone" id="top-btm">&#11014</div>
+	<div class="displayNone" id="wrapper-modal-cart">
+		<div class ="main-modal-cart">
+			<div id="modal-cart-close">&#10006</div>
+				<h1>Кошик</h1>
+				<img src="img/empty-cart.png" class="empty-cart">
+				<div class="cart-items">
+				</div>
+				<div class="block2-cart-module">
+					<fieldset id="cart-sort-name" class="cart-filter-module">	
+						<legend>Сортування по назві</legend>
+						<p class="filter-asc">&#129105 за зростанням</p>
+						<p class="filter-desc">&#129107 за спаданням</p>
+					</fieldset>
+					<fieldset id="cart-sort-price" class="cart-filter-module">	
+						<legend>Сортування по ціні</legend>
+						<p class="filter-asc">&#129105 за зростанням</p>
+						<p class="filter-desc">&#129107 за спаданням</p>
+					</fieldset>
+				</div>
+				<div class="block1-cart-module">
+					<p class="cart-wsum-price"><span id="cart-sum-price">0</span> UAH</p>
+					<button class="btm-1" id="modal-cart-clean">Очистити</button>
+					<button class="btm-1" id="modal-cart-submit">Купити</button>
+				</div>
+				
+		</div>
+	</div>
+	<div class="wrapper-detail-news displayNone">
+		<div class="main-detail-news">
+			<div id="modal-news-close">&#10006</div>
+			<img class="news-detail-img" src="img/news/0.gif">	
+			<p class="news-detail-date">0.0.0 00:00</p>
+			<p class="news-detail-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+			<p class="news-detail-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+		</div>
+	</div>
+	<header>
+		<div class="logo-header">
+			<img src="img/logo.png" alt="">
+			<p>Aboba Shop</p>
+		</div>
+		<nav class="fullnav">
+			<span >Зворотній зв'язок</span>
+			<a href="index">Товар</a>
+			<a class="onlyGuest" href="login">Увійти</a>
+			<a class="onlyUser displayNone userLogout" href="#">Вийти</a>
+			<a class="onlyAdmin" href="admin">Адмін сторінка</a>
+			<a class="onlyUser displayNone" href="account">Сторінка користувача</a>
+		</nav>
+		<div id="basket-wrapper">
+			<div id="basket-point" class="displayNone"></div>
+			<i class="fa fa-shopping-basket" id="basketBut" aria-hidden="true"></i>
+		</div>
+		
+		<div id="mob-nav-but">
+			&#8801
+		</div>
+	</header>
+	<ul id="mobnav">
+		<li><span >Зворотній зв'язок</span></li>
+		<li><a href="index.html">Товар</a></li>
+		<li class="onlyGuest"><a href="login">Увійти</a></li>
+		<li class="onlyUser displayNone userLogout"><a href="#">Вийти</a></li>
+		<li class="onlyAdmin"><a href="admin">Адмін сторінка</a></li>
+		<li class="onlyUser displayNone"><a href="account">Сторінка користувача</a></li>
+	</ul>
+	<main>
+		<div class="banner-main">
+			<h1>Магазин ПЗ</h1>
+			<div>Ми не просто продаємо ліцензійний софт. Ми продаємо рішення для ваших щоденних завдань, тому наші технічні фахівці готові допомогти з установкою, налаштуванням, оновленням та іншими необхідними роботами, пов'язаними з програмним забезпеченням. Ніякої головного болю, купили – і все відразу працює!</div>
+		</div>
+		<h1 class="title-news">Новини</h1>
+		<div id="news-bar">
+			<div class="news-item">
+				<div class="news-item-image">
+					<img src="img/news/0.png">
+				</div>
+				<div class="news-item-brinfo">
+					<p class="news-item-date">0.0.0 00:00</p>
+					<p class="news-item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+				</div>
+				<button class="news-item-bdetails">Докладніше</button>
+				<button class="news-item-texthide displayNone">Сховати текст</button>
+			</div>
+
+		</div>
+		<div class="loading displayNone"></div>
+	</main>
+	<footer>
+		<p class="copyright"> Всі права захищенні © Aboba Shop.</p>
+		<p id="time"> </p>
+		<img src="img/mastercard.png" alt=""></img>
+		<img src="img/visa.png" alt=""></img>
+	</footer>
+</body>
+</html>

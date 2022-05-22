@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initialscale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+	<link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+ 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Aboba shop</title>
+	<link rel="stylesheet" href="font/fontaweasome/css/all.min.css">
+	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/modal2.css">
+
+	<script src="js/script.js" defer></script>
+	<script src="js/script1.js" defer></script>
+	<script src="js/view/indexScript.js" defer></script>
+</head>
+<body>
+	<div class="displayNone" id="msg-box">
+		<h2 id ="msg-box-title">Lorem ipsum</h2>
+		<p id="msg-box-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, aspernatur quas neque autem, magnam nostrum qui.</p>
+	</div>
+	<div id ="basket-drop-area" class="displayNone">
+		<img src="img/drag&drop.png">
+	</div>
+	<div class="displayNone" id="nonmodal-subscribe-wrapper">
+		<div id="main-nonmodal-subscription">
+			<div id="nonmodal-subscription-close">&#10006</div>
+			<div id="nonmodal-subscribe">
+				<img src="img/mail-sub.png">
+				<p>Підпишіться на розсилку новинок!</p>	
+				<form id="submit-subsription">
+					<input id="edit-subsription" required class="text-1" type="email" placeholder="e-mail" name="mail-subscription-edit">
+					<input type="submit" value="Підписатися" name="mail-subscription-submit"class="btm-1">
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="displayNone" id="popup-modal-advertisiment">
+		<div id="main-popup-advertisiment">
+			<div id="popup-advertisiment-close">&#10006</div>
+			<div id="popup-advertisiment">
+				<span>Рекламу можна закрити через: <span id="ad-popup-timer">5</span></span>
+				<img src="img/ad/test.png">
+			</div>
+		</div>
+	</div>
+	<div class="displayNone" id="top-btm">&#11014</div>
+	<div class="displayNone" id="wrapper-modal-good">
+		<div id ="main-modal-good">
+			<div id="modal-goods-close">&#10006</div>
+			<div id="modal-good">
+				<img id="modal-goods-img" src="img/goods/0.png" alt="">
+				<h2 id="modal-goods-title">Lorem ipsum</h2>
+				<p id="modal-description-good">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, aspernatur quas neque autem, magnam nostrum qui. Laboriosam perspiciatis, voluptatem, a impedit ratione quasi est eos, ipsum aspernatur neque voluptates odit.</p>
+				<div class="modal-good-rowblk">
+					<p class="modal-good-price"><span id ="modal-good-price">99999</span> UAH</p>
+					<button class="btm-1" id="modal-buy-good">Додати в кошик</button>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="displayNone" id="wrapper-modal-cart">
+		<div class ="main-modal-cart">
+			<div id="modal-cart-close">&#10006</div>
+				<h1>Кошик</h1>
+				<img src="img/empty-cart.png" class="empty-cart">
+				<div class="cart-items">
+				</div>
+				<div class="block2-cart-module">
+					<fieldset id="cart-sort-name" class="cart-filter-module">	
+						<legend>Сортування по назві</legend>
+						<p class="filter-asc">&#129105 за зростанням</p>
+						<p class="filter-desc">&#129107 за спаданням</p>
+					</fieldset>
+					<fieldset id="cart-sort-price" class="cart-filter-module">	
+						<legend>Сортування по ціні</legend>
+						<p class="filter-asc">&#129105 за зростанням</p>
+						<p class="filter-desc">&#129107 за спаданням</p>
+					</fieldset>
+				</div>
+				<div class="block1-cart-module">
+					<p class="cart-wsum-price"><span id="cart-sum-price">0</span> UAH</p>
+					<button class="btm-1" id="modal-cart-clean">Очистити</button>
+					<button class="btm-1" id="modal-cart-submit">Купити</button>
+				</div>
+				
+		</div>
+	</div>
+	<header>
+		<div class="logo-header">
+			<img src="img/logo.png" alt="">
+			<p>Aboba Shop</p>
+		</div>
+		<nav class="fullnav">
+			<span >Зворотній зв'язок</span>
+			<a class="onlyGuest" href="login">Увійти</a>
+			<a class="onlyUser displayNone userLogout" href="#">Вийти</a>
+			<a class="onlyAdmin" href="admin">Адмін сторінка</a>
+			<a href="news">Новини</a>
+			<a class="onlyUser displayNone" href="account">Сторінка користувача</a>
+		</nav>
+		<div id="basket-wrapper">
+			<div id="basket-point" class="displayNone"></div>
+			<i class="fa fa-shopping-basket" id="basketBut" aria-hidden="true"></i>
+		</div>
+		
+		<div id="mob-nav-but">
+			&#8801
+		</div>
+	</header>
+	<ul id="mobnav">
+		<li><span >Зворотній зв'язок</span></li>
+		<li class="onlyGuest"><a href="login">Увійти</a></li>
+		<li class="onlyUser displayNone userLogout" ><a href="#">Вийти</a></li>
+		<li class="onlyAdmin"><a href="admin">Адмін сторінка</a></li>
+		<li><a href="news">Новини</a></li>
+		<li class="onlyUser displayNone"><a href="account">Сторінка користувача</a></li>
+	</ul>
+	<main>
+		<div class="banner-main">
+			<h1>Магазин ПЗ</h1>
+			<div>Ми не просто продаємо ліцензійний софт. Ми продаємо рішення для ваших щоденних завдань, тому наші технічні фахівці готові допомогти з установкою, налаштуванням, оновленням та іншими необхідними роботами, пов'язаними з програмним забезпеченням. Ніякої головного болю, купили – і все відразу працює!</div>
+		</div>
+		<nav class="nav-filter">
+			<fieldset id="filter1">
+				<legend>тип</legend>
+				<input type="checkbox" data-category-ind="1" id="os-check">
+				<label for="os-check">Операційні системи</label>
+				<input type="checkbox" data-category-ind="2" id="office-check">
+				<label for="office-check">Офісні програми</label>
+				<input type="checkbox" data-category-ind="3" id="gaming-check">
+				<label for="gaming-check">Ігри</label>
+				<input type="checkbox" data-category-ind="4" checked id="multimedia-check">
+				<label for="multimedia-check">Мультимедія</label>
+			</fieldset>
+			<fieldset id="cart-sort-name" class="cart-filter-module">	
+				<legend>Сортування по назві</legend>
+				<input type="radio" name="sort-type-radbut" checked id="choice-name-filterAsc" value="1">
+				<label for="choice-name-filterAsc">за зростанням</label>
+				<input type="radio" name="sort-type-radbut" id="choice-name-filterDesc" value="2">
+				<label for="choice-name-filterDesc">за спаданням</label>
+			</fieldset>
+			<fieldset id="cart-sort-price" class="cart-filter-module">	
+				<legend>Сортування по ціні</legend>
+				<input type="radio" name="sort-type-radbut" checked id="choice-price-filterAsc" value="3">
+				<label for="choice-price-filterAsc">за зростанням</label>
+				<input type="radio" name="sort-type-radbut" id="choice-price-filterDesc" value="4">
+				<label for="choice-price-filterDesc">за спаданням</label>
+			</fieldset>
+			<fieldset class="cart-filter-module">	
+			<legend>Ціновий діапазон</legend>
+			<div class="exRange-main" data-range-max="30000", data-range-min="0">
+				<div class="custom-range">
+					<div class="control-el custrange-right-bound"><span></span></div>
+					<div class="custrange-line"></div>
+					<div class="control-el custrange-left-bound"><span></span></div>
+				</div>
+				<input type="range" id="left-bound" hidden="true">
+				<input type="range" id="right-bound"hidden="true">
+			</div>
+			</fieldset>
+			<button class="btm-1" id="find-goods">Вибрати товари</button>
+		</nav>
+		<div class="wrapper-content-goods">
+			<div id="preloader-content-goods">
+				<div id="preloader-logo"></div>
+			</div>
+			<div id="content-goods">
+				<div class="goods displayNone">
+					<div class="wrapper-img-set-goods">
+						<img class="img-mark-goods" src="img/warranty.png" alt="">
+						<div class="img-set-goods">
+							<img class="img-main-goods" src="img/goods/0.png" alt="">
+						</div>
+					</div>
+					<h5>test</h5>
+					<p>ціна:<span class="good-price">0 UAH</span></p>
+					<button data-good-id="0">Докладно</button>
+				</div>
+				<div class="loading"></div>
+			</div>
+			<div id="ad-wrapper">
+				<span>advertisement</span>
+				<img src="img/ad/test.png" alt="">
+				<img src="img/ad/test.png" alt="">
+				<img src="img/ad/test.png" alt="">
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p class="copyright"> Всі права захищенні © Aboba Shop.</p>
+		<p id="time"> </p>
+		<img src="img/mastercard.png" alt=""></img>
+		<img src="img/visa.png" alt=""></img>
+	</footer>
+</body>
+</html>
